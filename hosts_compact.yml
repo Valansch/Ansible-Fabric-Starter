@@ -19,19 +19,23 @@ all:
             - explorer
           org: mainorg # Organization name
           ansible_host: node0 # Real ip address or domain name of the machine
-        # Same structure for any other nodes
+          ansible_user: root
+          # Same structure for any other nodes
         one.example.com:
           node_roles:
             - peer
           org: one
           ansible_host: node1
+          ansible_user: root
         two.example.com:
           node_roles:
             - peer
           org: two
           ansible_host: node2
+          ansible_user: root
         three.example.com:
           node_roles:
             - peer
           org: three
           ansible_host: node3
+          ansible_user: root
