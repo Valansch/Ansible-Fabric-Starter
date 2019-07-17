@@ -18,21 +18,20 @@ all:
             - root_peer
             - explorer
           org: mainorg # Organization name
-          ansible_host: 1.2.3.4 # Real ip address or domain name of the machine
-          ansible_user: ubuntu # User with sudo access
-          ansible_private_key_file: ~/test.pem # Private key to identify ourselves
+          ansible_host: node0 # Real ip address or domain name of the machine
         # Same structure for any other nodes
         one.example.com:
           node_roles:
             - peer
           org: one
-          ansible_host: 1.2.3.5
-          ansible_user: ubuntu
-          ansible_private_key_file: ~/test.pem
+          ansible_host: node1
         two.example.com:
           node_roles:
             - peer
           org: two
-          ansible_host: 1.2.3.6
-          ansible_user: ubuntu
-          ansible_private_key_file: ~/test.pem
+          ansible_host: node2
+        three.example.com:
+          node_roles:
+            - peer
+          org: three
+          ansible_host: node3
