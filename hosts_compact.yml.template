@@ -18,4 +18,3 @@ all:
             - root_peer
             - explorer
           org: mainorg # Organization name
-          ansible_user: root
